@@ -17,7 +17,7 @@
 }
 
 .section {
-  background: #dfdada;
+  background: #f2f2f2;
 }
 
 .header {
@@ -70,24 +70,25 @@
 /*Тело 1*/
 
 .main {
+  display: flex;
+  justify-content: space-between;
   flex-grow: 1;
+}
+
+.box_text {
+
 }
 
 .heiding {
   position: relative;
-  box-sizing: border-box;
   font-family: OpenSans;
   font-size: 60px;
   line-height: 72px;
   letter-spacing: 1.5px;
   color: rgba(0, 0, 0, 1);
   text-transform: uppercase;
-  margin-top: 102px;
-  margin-left: 164px;
-}
-
-.box_text {
-
+  padding-top: 102px;
+  padding-left: 164px;
 }
 
 .text {
@@ -103,20 +104,19 @@
 }
 
 .red_button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   width: 227px;
   height: 55px;
   background: rgba(255, 45, 45, 1);
   border-radius: 6px;
   margin-left: 164px;
   margin-top: 64px;
+  text-align: center;
+  line-height: 55px;
 }
 
 .text_button {
   color: rgba(255, 255, 255, 1);
-  text-align: center;
   font-family: OpenSans;
   font-size: 18px;
   line-height: 34px;
@@ -124,14 +124,14 @@
 }
 
 .img_box {
-  text-align: right;
   margin-right: 164px;
 }
 
 .img {
   width: 100%;
-  height: 100%;
   box-sizing: border-box;
+  padding-top: 102px;
+  padding-left: 82px;
   max-width: 551px;
   min-height: 356px;
 }
