@@ -111,9 +111,9 @@
   text-transform: uppercase;
 }
 
-/*.span {
+.span {
   letter-spacing: 6px;
-}*/
+}
 
 .text {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
@@ -145,11 +145,10 @@
 .img_box {
   width: 100%;
   height: 100%;
-  max-width: 580px;
+  max-width: 551px;
   max-height: 372px;
-  background: rgba(0, 0, 0, 0.0001);
-  mix-blend-mode: normal;
   margin-top: 102px;
+  box-shadow: 12px 15px 14px rgba(0, 0, 0, 1);
 }
 
 .img {
@@ -157,8 +156,9 @@
   box-sizing: border-box;
   max-width: 551px;
   height: auto;
-  mix-blend-mode: normal;
+  padding-top: 10px;
 }
+
 
 @media (max-width: 548px) {
   .box_text {
