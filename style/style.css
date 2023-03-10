@@ -53,6 +53,7 @@
   list-style-type: none;
   text-transform: uppercase;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .item {
@@ -165,7 +166,7 @@
     text-align: center;
   }
   .heiding {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .red_button {
