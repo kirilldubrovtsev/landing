@@ -484,16 +484,16 @@ align-items: center;
 .products__container {
 display: grid;
 grid-template-rows:repeat(auto-fit, minmax(300px, 1fr));
-grid-template-columns: repeat(4, 290px);
-gap: 20px;
-grid-auto-flow: row;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 10px;
+grid-template-rows: auto;
 }
 
 .products__photo {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 290px;
   transition: 1s;
+  object-fit: cover;
 }
 
 .products__photo:hover {
@@ -502,4 +502,40 @@ grid-auto-flow: row;
 }
 
 
+@media (max-width: 1150px) {
+  .products__photo {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+/* Блок 4 */
+
+.section__team {
+padding-top: 180px;
+padding-bottom: 60px;
+}
+
+.team__title {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 700px;
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: rgba(0, 0, 0, 1);
+  text-align: left;
+}
+
+.team__text {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 480px;
+  margin-top: 34px;
+  color: rgba(0, 0, 0, 1);
+}
+.products__line_team {
+  margin-left: 0;
+}
 
