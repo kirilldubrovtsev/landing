@@ -502,8 +502,20 @@ align-items: center;
 
 
 @media (max-width: 1150px) {
-  .products__photo {
+  .products__container {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media (max-width: 700px) {
+  .products__container {
     grid-template-columns: repeat(2,1fr);
+    gap: 8px;;
+  }
+}
+@media (max-width: 500px) {
+  .products__container {
+    grid-template-columns: repeat(1,1fr);
+    gap: 8px;
   }
 }
 
