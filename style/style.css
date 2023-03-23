@@ -482,12 +482,12 @@ align-items: center;
 }
 
 .products__container {
-display: grid;
-grid-template-rows:repeat(auto-fit, minmax(300px, 1fr));
-grid-template-columns: repeat(4, 1fr);
-grid-gap: 10px;
-grid-template-rows: auto;
-}
+  display: grid;
+  grid-template-rows:repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-template-rows: auto;
+  }
 
 .products__photo {
   width: 100%;
