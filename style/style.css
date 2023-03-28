@@ -368,6 +368,13 @@ font-face {
 
 }
 
+@media (max-width: 1190px) {
+  .service__block {
+    margin-top: 36px;
+  }
+}
+
+
 @media (max-width:700px) {
   .service__title {
     font-size: 20px;
@@ -384,12 +391,42 @@ font-face {
   }
 }
 
+@media (max-width: 600px) {
+  .service__content {
+    margin: 0 auto;
+  }
+  
+  .description__title_management::before {
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
 
-@media (max-width: 1190px) {
-  .service__block {
-    margin-top: 30px;
+  .description__title_car::before {
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+
+  .description__title_desing::before {
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+
+  .description__title_logo::before {
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+
+  .description__title {
+    text-align: center;
+  }
+
+  .description__text {
+    text-align: center;
+    margin: 0 auto;
   }
 }
+
+
 
 /*Блок 3 */
 
@@ -500,6 +537,24 @@ font-face {
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
   }
+  .products__photo {
+    height: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+.products__menu {
+  flex-direction: column;
+}
+}
+
+
+@media (max-width: 650px) {
+  .products__text {
+    text-align: center;
+    margin-left: 24px;
+  }
+  
 }
 
 @media (max-width: 500px) {
@@ -673,14 +728,27 @@ font-face {
   height: 216px;
 }
 
+
+
 /*Блок 5 */
 
-.section__reporting {
+.reporting {
   width: 100%;
-  max-width: 1579px;
-  margin-top: 114px;
-  min-height: 516px;
+  height: 100%;
+  max-width: 100%;
+  display: block;
+  padding-top: 114px;
+  padding-bottom: 126px;
+  max-height: 516px;
   background: #000000;
+}
+
+.reporting__content {
+  max-width: 1130px;
+  margin-top: 156px;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin: auto;
 }
 
 .reporting__title {
@@ -689,9 +757,6 @@ font-face {
   font-size: 42px;
   line-height: 24px;
   color: rgba(255, 255, 255, 1);
-  text-align: center;
-  margin-top: 150px;
-  overflow-wrap: break-word;
 }
 
 .reporting__text {
@@ -699,25 +764,15 @@ font-face {
   font-weight: 400;
   font-style: 16px;
   line-height: 28px;
-  text-align: center;
   color: rgba(255, 255, 255, 1);
   padding-top: 16px;
-  width: 100%;
-  max-width: 574px;
-  margin: 0 auto;
 }
 
 .reporting__form {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  margin: 0 260px;
+  justify-content: center;
   margin-top: 56px;
-  width: 100%;
-  height: 100%;
-  max-width: 524px;
-  max-height: 82px;
-  background: #ffffff;
 }
 
 .reporting__input {
@@ -725,14 +780,14 @@ font-face {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  width: 100%;
-  height: 100%;
   margin-right: 19px;
   padding-left: 38px;
-  max-width: 524px;
-  max-height: 82px;
+  width: 524px;
+  height: 82px;
+  border-radius: 6px;
   background: #ffffff;
   color: rgba(44, 44, 44, 1);
+
 }
 
 .reporting__button {
@@ -745,9 +800,9 @@ font-face {
   font-weight: 700;
   font-size: 18px;
   line-height: 34px;
-  width: 100%;
-  max-width: 218px;
-  min-height: 82px;
+  border-radius: 6px;
+  width: 218px;
+  height: 82px;
   background: #FF2d2d;
   color: rgba(255, 255, 255, 1);
 }
