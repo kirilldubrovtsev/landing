@@ -739,7 +739,7 @@ font-face {
   display: block;
   padding-top: 114px;
   padding-bottom: 126px;
-  max-height: 516px;
+  min-height: 516px;
   background: #000000;
 }
 
