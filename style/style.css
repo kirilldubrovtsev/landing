@@ -395,7 +395,7 @@ font-face {
   .service__content {
     margin: 0 auto;
   }
-  
+
   .description__title_management::before {
     margin: 0 auto;
     margin-bottom: 8px;
@@ -537,15 +537,16 @@ font-face {
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
   }
+
   .products__photo {
     height: 280px;
   }
 }
 
 @media (max-width: 600px) {
-.products__menu {
-  flex-direction: column;
-}
+  .products__menu {
+    flex-direction: column;
+  }
 }
 
 
@@ -554,7 +555,7 @@ font-face {
     text-align: center;
     margin-left: 24px;
   }
-  
+
 }
 
 @media (max-width: 500px) {
@@ -732,9 +733,11 @@ font-face {
   .team__title {
     text-align: center;
   }
+
   .team__text {
     text-align: center;
   }
+
   .products__line_team {
     margin: 6px auto;
   }
@@ -767,7 +770,7 @@ font-face {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 42px;
-  line-height: 24px;
+  line-height: 32px;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -796,6 +799,7 @@ font-face {
   padding-left: 38px;
   width: 524px;
   height: 82px;
+  border: 0;
   border-radius: 6px;
   background: #ffffff;
   color: rgba(44, 44, 44, 1);
@@ -815,6 +819,7 @@ font-face {
   border-radius: 6px;
   width: 218px;
   height: 82px;
+  border: 0;
   background: #FF2d2d;
   color: rgba(255, 255, 255, 1);
 }
@@ -828,6 +833,7 @@ font-face {
     font-size: 38px;
   }
 }
+
 @media (max-width: 820px) {
   .reporting__title {
     font-size: 30px;
@@ -844,5 +850,255 @@ font-face {
   .reporting__title {
     font-size: 22px;
   }
+}
+
+.bond {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  padding-top: 104px;
+  padding-bottom: 108px;
+}
+
+.bond::before {
+  content: '';
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.bond::after {
+  content: '';
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: #2d2d2d;
+}
+
+.bond-content {
+  width: 100%;
+  max-width: 752px;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.bond_bond-body {
+  width: 734px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.bond_bond-contacts {
+  width: 580px;
+  height: 485px;
+  padding: 20px;
+  margin-top: 76px;
+  background: #2d2d2d;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.bond-text {
+  max-width: 752px;
+}
+
+.bond-line {
+  width: 134px;
+  height: 5px;
+  margin-top: 58px;
+  border: 0;
+  margin-left: 0;
+  background: #FF2d2d;
+}
+
+.input {
+  width: 100%;
+  max-width: 734px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.bond-input_name {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 74px;
+  box-sizing: border-box;
+  width: 340px;
+  height: 69px;
+  border: 0;
+  border-radius: 6px;
+  background: rgba(246, 242, 242, 1);
+  color: rgba(0, 0, 0, 1);
+  padding-left: 50px;
+}
+
+.bond-input {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  box-sizing: border-box;
+  width: 340px;
+  height: 69px;
+  border-radius: 6px;
+  border: 0;
+  background: rgba(246, 242, 242, 1);
+  color: rgba(0, 0, 0, 1);
+  padding-left: 50px;
+}
+
+.bond-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.bond-field {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 1);
+  padding-top: 32px;
+  padding-left: 50px;
+  width: 734px;
+  height: 252px;
+  margin-top: 44px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.bond-button {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 34px;
+  margin-top: 44px;
+  width: 100%;
+  max-width: 734px;
+  height: 76px;
+  border: 0;
+  border-radius: 6px;
+  background: #ff3b3b;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.bond-info {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 34px;
+  margin-top: 142px;
+  margin-left: 82px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.bond-address {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 30px;
+  margin-left: 82px;
+}
+
+.connection__website {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 28px;
+  margin-left: 82px;
+}
+
+.tel {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 20px;
+  margin-left: 82px;
+}
+
+.bond-address_name {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 4px;
+  margin-left: 82px;
+}
+
+@media (max-width: 1249px) {
+  .grid-section {
+    grid-template-columns: minmax(350px, 700px) minmax(350px, 500px);
+  }
+}
+
+.bond::after,
+.bond::before {
+  content: none;
+}
+
+.bond-content {
+  grid-column-start: 1;
+}
+
+.bond_bond-body {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.bond_bond-contacts {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+@media (max-width: 1023px) {
+  .bond {
+    display: block;
+  }
+  
+  .bond_bond-body {
+    padding-right: 20px;
+  }
+}
+
+.footer {
+  width: 100%;
+  max-width: 1586px;
+  min-height: 113px;
+  margin: 0 auto;
+  background: rgba(49, 48, 48, 1);
+}
+
+.social-text {
+  color: rgba(184, 184, 184, 1);
+  padding-top: 53px;
+  padding-left: 172px;
 }
 
