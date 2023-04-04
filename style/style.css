@@ -1102,3 +1102,15 @@ font-face {
   padding-left: 172px;
 }
 
+.social {
+  padding-top: 48px;
+  padding-right: 168px;
+}
+
+.footer__link {
+padding: 18px;
+}
+
+.footer__icon:active{
+  background: blue;
+}
