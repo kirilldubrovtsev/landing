@@ -852,7 +852,7 @@ font-face {
   }
 }
 
-.bond {
+.get {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -861,7 +861,7 @@ font-face {
   padding-bottom: 108px;
 }
 
-.bond::before {
+.get::before {
   content: '';
   grid-column-start: 1;
   grid-column-end: 2;
@@ -869,7 +869,7 @@ font-face {
   grid-row-end: 3;
 }
 
-.bond::after {
+.get::after {
   content: '';
   grid-column-start: 4;
   grid-column-end: 5;
@@ -878,18 +878,18 @@ font-face {
   background: #2d2d2d;
 }
 
-.bond-content {
+.get__content {
   width: 100%;
   max-width: 752px;
   padding-left: 20px;
   padding-right: 20px;
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-.bond_bond-body {
+.get__get-body {
   width: 734px;
   padding-left: 20px;
   padding-bottom: 20px;
@@ -900,7 +900,7 @@ font-face {
   grid-row-end: 3;
 }
 
-.bond_bond-contacts {
+.get__get-contacts {
   width: 580px;
   height: 485px;
   padding: 20px;
@@ -912,7 +912,7 @@ font-face {
   grid-row-end: 3;
 }
 
-.bond-text {
+.get__text {
   max-width: 752px;
 }
 
@@ -929,11 +929,12 @@ font-face {
   width: 100%;
   max-width: 734px;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
 }
 
-.bond-input_name {
+.get__input_name {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -949,7 +950,7 @@ font-face {
   padding-left: 50px;
 }
 
-.bond-input {
+.get__input {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -964,13 +965,13 @@ font-face {
   padding-left: 50px;
 }
 
-.bond-form {
+.get__form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
-.bond-field {
+.get__field {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -981,11 +982,10 @@ font-face {
   width: 734px;
   height: 252px;
   margin-top: 44px;
-  box-sizing: border-box;
   resize: none;
 }
 
-.bond-button {
+.get__button {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -1002,54 +1002,24 @@ font-face {
   cursor: pointer;
 }
 
-.bond-info {
+.get__info {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 34px;
-  margin-top: 142px;
-  margin-left: 82px;
+  padding-top: 142px;
+  padding-left: 82px;
   color: rgba(255, 255, 255, 1);
 }
 
-.bond-address {
+.address {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
   color: rgba(255, 255, 255, 1);
-  margin-top: 30px;
-  margin-left: 82px;
-}
-
-.connection__website {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: rgba(255, 255, 255, 1);
-  margin-top: 28px;
-  margin-left: 82px;
-}
-
-.tel {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: rgba(255, 255, 255, 1);
-  margin-top: 20px;
-  margin-left: 82px;
-}
-
-.bond-address_name {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: rgba(255, 255, 255, 1);
-  margin-top: 4px;
-  margin-left: 82px;
+  padding-top: 30px;
+  padding-left: 82px;
 }
 
 @media (max-width: 1249px) {
@@ -1058,8 +1028,8 @@ font-face {
   }
 }
 
-.bond::after,
-.bond::before {
+.get::after,
+.get::before {
   content: none;
 }
 
@@ -1067,26 +1037,33 @@ font-face {
   grid-column-start: 1;
 }
 
-.bond_bond-body {
+.get__get-body {
   width: 100%;
   grid-column-start: 1;
   grid-column-end: 2;
 }
 
-.bond_bond-contacts {
+.get__get-contacts {
   grid-column-start: 2;
   grid-column-end: 3;
 }
 
 @media (max-width: 1023px) {
-  .bond {
+  .get {
     display: block;
   }
   
-  .bond_bond-body {
+  .get__get-body {
     padding-right: 20px;
   }
 }
+@media (max-width: 400px) {
+  .get__input {
+    margin-top: 16px;
+    justify-content: center;
+  }
+}
+
 
 .footer {
   width: 100%;
@@ -1109,8 +1086,4 @@ font-face {
 
 .footer__link {
 padding: 18px;
-}
-
-.footer__icon:active{
-  background: blue;
 }
