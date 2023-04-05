@@ -1052,11 +1052,12 @@ font-face {
   .get {
     display: block;
   }
-  
+
   .get__get-body {
     padding-right: 20px;
   }
 }
+
 @media (max-width: 400px) {
   .get__input {
     margin-top: 16px;
@@ -1085,5 +1086,6 @@ font-face {
 }
 
 .footer__link {
-padding: 18px;
+  text-decoration: none;
+  padding: 18px;
 }
