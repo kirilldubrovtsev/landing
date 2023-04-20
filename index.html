@@ -15,7 +15,7 @@
 
   <div class="page__header">
     <header class="header">
-      <nav class="header__navigation navigation">
+     <nav class="header__navigation navigation">
         <ul class="menu">
           <li class="menu__item item">
             <a class=" menu__link link" href="#"> home </a>
@@ -30,6 +30,25 @@
             <a class="menu__link link" href="#"> contact </a>
           </li>
         </ul>
+        <div class="popup-menu">
+          <button class="popup-menu__button"> 
+            <img class="burger" src="./img/hamburger_icon_145979.svg" alt="burger">
+          </button>
+          <ul class="popup-menu__list hide-popup">
+            <li class="popup-menu__item">
+              <a class="popup-menu__link" href="#"> home </a>
+            </li>
+            <li class="popup-menu__item">
+              <a class="popup-menu__link" href="#"> portfolio </a>
+            </li>
+            <li class="popup-menu__item">
+              <a class="popup-menu__link" href="#"> about us </a>
+            </li>
+            <li class="popup-menu__item">
+              <a class="popup-menu__list" href="#"> contact </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -150,7 +169,7 @@
           <hr class="products__line products__line_team">
         </div>
         <div class="team_colleagues">
-          <img class="team__older__photo" src="./img/pngwing.com (4).png" alt="фото руководителя">
+          <img class="team__older__photo" src="./img/manager.com.png" alt="фото руководителя">
           <div class="team__main__content">
             <div class="team__main__info">
               <span class="team__older__name"> mark waugh </span>
@@ -182,7 +201,7 @@
               </div>
               <div class="team__staff">
                 <h3 class="staff__name"> sokina jue </h3>
-                <img class="staff__photo" src="./img/pngwing.com (6).png" alt="сотрудники">
+                <img class="staff__photo" src="./img/pngwing.com.png" alt="сотрудники">
               </div>
             </section>
           </div>
@@ -204,34 +223,9 @@
         </form>
       </section>
 
-      <!--div class="feedback-contacts">
-        <div class="feedback__left-box"> </div>
-        <section class="feedback">
-          <div class="feedback__header">
-            <h2 class="feedback__title"> get in touch </h2>
-            <p class="section-title feedback__text">
-              Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur
-              adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod
-              tempor incididunt ut labore et.
-            </p>
-            <hr class="bond-line">
-          </div>
-        </section>
-      </div>
-
-      <section class="feedback__body section">
-        <form class="feedback__form">
-          <input class="feedback__input feedback__name" type="text" name="name" placeholder="name" required>
-          <input class="feedback__input feedback__mail" type="text" name="name" placeholder="name" required>
-          <textarea class="feedback__input feedback__message" cols="30" rows="5" placeholder="type your message"> 
-          </textarea>
-          <button class="feedback__button" type="submit"> send message </button>
-        </form> 
-      </section-->
-
       <!--Блок 7-->
       <section class="get section">
-        <div class="get__content">
+        <div class="get__content content__team">
           <h2 class="get__title team__title">
             get in touch
           </h2>
@@ -245,31 +239,31 @@
 
         <div class="get__get-body">
           <form class="get__form">
-            <div class="input">
-              <input class="get__input get__name" type="text" name="name" placeholder="Name" required>
-              <input class="get__input get__mail" type="text" name="mail" placeholder="Your Mail" required>
-            </div>
+            <input class="get__input get__name" type="text" name="name" placeholder="Name" required>
+            <input class="get__input get__mail" type="text" name="mail" placeholder="Your Mail" required>
             <textarea class="get__field get__input" cols="30" rows="5" placeholder="type your message"> Type your message
         </textarea>
             <button class="get__button" type="submit"> Send message </button>
           </form>
-        </div>
-        <div class="get__get-contacts">
-          <div class="get__get-contact">
-            <h3 class="get__info"> contact info </h3>
-            <p class="address"> Jalalabad 24 / A, Ambaarkhana, Sylhet,</p>
-            <span class="address"> Bangladesh </span>
-            <p class="address"> redwan@deviserweb.com </p>
-            <a class="address" href="tel:(+88)01761746373"> тел: (+88) 01761746373 </a>
+          <div class="get__get-contacts">
+            <div class="get__get-contact">
+              <h3 class="get__info"> contact info </h3>
+              <p class="address"> Jalalabad 24 / A, Ambaarkhana, Sylhet,</p>
+              <span class="address"> Bangladesh </span>
+              <p class="address"> redwan@deviserweb.com </p>
+              <a class="address" href="tel:(+88)01761746373"> тел: (+88) 01761746373 </a>
+            </div>
           </div>
         </div>
       </section>
       <footer class="footer section">
         <p class="social-text"> &copy; Copyright @Junaed 2016, All rights reserved. </p>
-        <div class="social">
+        <div class="social telegram">
           <a class="footer__link" href="https://web.telegram.org/z/" target="_blank">
+            <!--img class="footer__icon" src="./img/Twitter.svg" alt="twitter"> <i class="fa fa-paper-plane fa-2x"> </i-->
             <img class="footer__icon" src="./img/Twitter.svg" alt="twitter">
           </a>
+          <!--/div-->
           <a class="footer__link" href="https://spb.hh.ru/" target="_blank">
             <img src="./img/linkedIn.svg" alt="LinkedIn">
           </a>
@@ -279,10 +273,11 @@
           <a class="footer__link" href="https://vk.com/feed" target="_blank">
             <img src="./img/facebook.svg" alt="facebook">
           </a>
-        </div>
+          </div>
       </footer>
     </div>
   </div>
+  <script async src="./js/script.js"> </script>
 </body>
 
 </html>
