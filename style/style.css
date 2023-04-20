@@ -1025,28 +1025,7 @@ font-face {
    max-width: 752px;
  }
  
- /*.team__title {
-   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-   font-weight: 700px;
-   font-size: 42px;
-   text-transform: uppercase;
-   letter-spacing: 0.4px;
-   color: rgba(0, 0, 0, 1);
-   text-align: left;
- }
- 
- 
- .team__text {
-   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-   font-style: normal;
-   font-weight: 400px;
-   font-size: 16px;
-   line-height: 28px;
-   margin-top: 34px;
-   color: rgba(0, 0, 0, 1);
- }*/
- 
- .bond-line {
+.bond-line {
    width: 134px;
    height: 5px;
    margin-top: 58px;
@@ -1194,7 +1173,24 @@ font-face {
       max-width: 100%;
     }
   }
-  
+  @media (max-width: 400px) {
+    .bond-line {
+      margin: 0 auto;
+    }
+    .get__text {
+      text-align: center;
+      padding: 6px;
+      margin-bottom: 10px;
+    }
+    .get__mail,
+    .get__name {
+      margin-left: 30px;
+    }
+    .get__get-contacts {
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+  }
  
 
 
@@ -1225,6 +1221,16 @@ font-face {
   margin: 0 18px;
 }
 
+@media (max-width: 400px) {
+  .social-text {
+    padding-left: 60px;
+  }
+  .social {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 8px;
+  }
+}
 
 /*.social a {
   text-align: center;
