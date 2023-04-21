@@ -19,7 +19,7 @@ document.addEventListener('click', hidePopup);
 
 function hidePopup(el) { 
   {
-  let targetinside = popupWrapper.contains(el.target);
+  //let targetinside = popupWrapper.contains(el.target);//
 }
 
 if(targetinside) {
