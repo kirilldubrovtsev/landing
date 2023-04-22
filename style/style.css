@@ -1496,7 +1496,7 @@ font-face {
 .footer {
   width: 100%;
   max-width: 1586px;
-  min-height: 113px;
+  height: 113px;
   margin: 0 auto;
   background: rgba(49, 48, 48, 1);
 }
