@@ -130,7 +130,7 @@ font-face {
   text-decoration: none;
 }
 
-.popup-menu__button {
+/*.popup-menu__button {
   z-index: 1;
   display: none;
   padding: 0;
@@ -226,7 +226,7 @@ font-face {
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-}
+}*/
 
 @media (max-width: 580px) {
   .menu {
@@ -1049,6 +1049,7 @@ font-face {
   width: 100%;
   padding-top: 104px;
   padding-bottom: 107px;
+  padding-left: 28px;
 }
 
 .get__content {
@@ -1156,7 +1157,7 @@ font-face {
   height: 485px;
   padding: 20px;
   margin-top: 22px;
-  margin-left: 38px;
+  margin-left: 104px;
   background: #2d2d2d;
   flex-shrink: 0;
   flex-grow: 0;
@@ -1170,6 +1171,7 @@ font-face {
   padding-top: 142px;
   padding-left: 82px;
   color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
 }
 
 .address {
@@ -1237,7 +1239,8 @@ font-face {
 
 .footer {
   width: 100%;
-  max-width: 1586px;
+  max-width: 100%;
+  /*max-width: 1586px;*/
   min-height: 113px;
   margin: 0 auto;
   background: rgba(49, 48, 48, 1);
