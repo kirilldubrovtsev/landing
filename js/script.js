@@ -1,32 +1,18 @@
-// Узлы
+const menuWrapper = document.querySelector('.header');
+const menuBurger = document.querySelector('.burger');
+const menuList = document.querySelector('.menu__list')
 
-const popupButton = document.querySelector('popup-menu__button');
-const popupWrapper = document.querySelector('popup-menu');
-const popupMenu = document.querySelector('.popup-menu__list');
-
-// Клик по кнопке
-
-popupButton.addEventListener('click', handleMenu);
-
-// Скрыть и показать кнопку
-
-function handleMenu() {
-popupMenu.classList.toggle('hide-popup');
+function toggleMenu () {
+  menuList.classList.toggle('opened');
 }
 
-// Клик на любое место экрана
-document.addEventListener('click', hidePopup);
+function closeMenu(evt) {
+    let insideMenu = menuWrapper.contains(evt.target);
 
-function hidePopup(el) { 
-  {
-  //let targetinside = popupWrapper.contains(el.target);//
-}
-
-if(targetinside) {
-  popupMenu.classList.add('hide-popup');
-}
-else {
-  return;
+    if (!insideMenu) {
+        menuList.classList.remove('opened');
+    }
 }
 
-}
+menuBurger.addEventListener('click', toggleMenu);
+document.addEventListener('click', closeMenu);
