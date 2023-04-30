@@ -622,14 +622,14 @@ font-face {
 
 .products__photo {
   width: 100%;
-  height: auto;
+  height: 290px;
   /*transition: 1s;*/
   object-fit: cover;
 }
 
 .products__photo:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  /*transform: scale(1.2);*/
 }
 
 
