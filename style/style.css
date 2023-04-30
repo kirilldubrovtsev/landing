@@ -623,7 +623,7 @@ font-face {
 .products__photo {
   width: 100%;
   height: auto;
-  transition: 1s;
+  /*transition: 1s;*/
   object-fit: cover;
 }
 
