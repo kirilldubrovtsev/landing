@@ -68,6 +68,7 @@ font-face {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   min-height: 100vh;
   width: 100%;
   flex-grow: 1;
@@ -344,29 +345,6 @@ font-face {
     margin-top: 50px;
   }
 }
-
-/*@media (max-width: 400px) {
-  .intro__title {
-    font-size: 26px;
-    line-height: 28px;
-    text-align: center;
-  }
-
-  .intro__text {
-    text-align: center;
-    font-size: 12px;
-    line-height: 22px;
-    padding: 26px;
-  }
-
-  .button__red {
-    margin-top: 24px;
-  }
-
-  .link {
-    line-height: 18px;
-  }
-}*/
 
 /* Блок 2 */
 
@@ -944,7 +922,7 @@ font-face {
     text-align: center;
   }
   .team__link {
-    margin-right: 18px;
+    margin-right: 10px;
     line-height: 20px;
   }
 }
@@ -995,7 +973,8 @@ font-face {
   line-height: 24px;
   margin-right: 19px;
   padding-left: 38px;
-  width: 524px;
+  width: 100%;
+  max-width: 524px;
   height: 82px;
   border: 0;
   border-radius: 6px;
@@ -1230,6 +1209,10 @@ font-face {
 }
 
 @media (max-width: 400px) {
+
+  .get {
+    padding: 50px 14px;
+  }
   .bond-line {
     margin: 0 auto;
   }
@@ -1238,11 +1221,6 @@ font-face {
     text-align: start;
     margin-bottom: 10px;
   }
-  /*.get__get-contacts {
-    margin: 0 auto;
-    margin-top: 40px;
-    margin-right: 20px;
-  }*/
   .get__title {
     text-align: center;
   }
