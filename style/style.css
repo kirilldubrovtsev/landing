@@ -900,7 +900,7 @@ font-face {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .team__network {
     display: flex;
     justify-content: space-between;
@@ -1200,12 +1200,11 @@ font-face {
 
   .get__form {
     width: 100%;
-    max-width: 750px;
+    padding-right: 16px;
   }
 
   .get__get-contacts {
     width: 100%;
-    max-width: 580px;
     flex-shrink: 1;
   }
 }
@@ -1216,14 +1215,11 @@ font-face {
   }
 
   .get__get-contacts {
-    margin: 26px 8px auto;
+    margin: 26px 10px 0 0;
   }
 }
 
 @media (max-width: 770px) {
-  .get__form{
-    margin-left: -15px;
-  }
   .get__input,
   .get__name {
     width: 100%;
@@ -1285,7 +1281,7 @@ font-face {
   margin: 0 18px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .social-text {
     padding-left: 60px;
   }
