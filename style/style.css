@@ -346,6 +346,7 @@ font-face {
   }
 }
 
+
 /* Блок 2 */
 
 .service {
@@ -1179,7 +1180,7 @@ font-face {
 
   .get__form {
     width: 100%;
-    padding-right: 16px;
+    padding-right: 10px;
   }
 
   .get__get-contacts {
@@ -1211,22 +1212,15 @@ font-face {
 @media (max-width: 400px) {
 
   .get {
-    padding: 50px 14px;
+    padding: 40px 4px;
   }
-  .bond-line {
-    margin: 0 auto;
-  }
-
-  .get__text {
-    text-align: start;
-    margin-bottom: 10px;
-  }
+  .get__text,
   .get__title {
     text-align: center;
   }
 
   .products__line_get {
-    margin: 30 auto;
+  margin: 40px auto;
   }
 }
 
