@@ -661,9 +661,12 @@ font-face {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .products {
     padding-top: 80px;
+  }
+  .universal__title_products {
+    line-height: 38px;
   }
 
   .products__text {
@@ -1023,16 +1026,6 @@ font-face {
   }
 
 }
-@media (max-width: 750px) {
-  /*.reporting__input {
-    margin: 14px;
-  }
-  .reporting {
-    padding-top: 98px;
-    padding-bottom: 80px;
-  }*/
-}
-
 
 .get {
   width: 100%;
