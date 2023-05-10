@@ -663,6 +663,7 @@
   .products {
     padding-top: 80px;
   }
+
   .universal__title_products {
     line-height: 38px;
   }
@@ -858,10 +859,7 @@
     justify-content: center;
   }
 
-  .content__team {
-    margin: 0 auto;
-  }
-
+  .products__line_team,
   .team__older__name {
     margin: 26px auto;
   }
@@ -870,8 +868,17 @@
     margin: 8px auto;
   }
 
+  .content__team,
   .team__older__photo {
-    margin: 0;
+    margin: 0 auto;
+  }
+
+  .team__main__info {
+    margin: 0 auto;
+  }
+
+  .universal__title_team {
+    text-align: center;
   }
 }
 
@@ -907,7 +914,6 @@
   }
 
   .team__main__info {
-    text-align: center;
     font-size: 14px;
   }
 
@@ -920,23 +926,22 @@
     justify-content: center;
   }
 
-  .team__older__photo {
-    margin: 0 auto;
-  }
-
   .team__older__name {
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 10px;
   }
+
   .team__office {
     flex-direction: row;
     justify-content: center;
   }
+
   .section__team,
   .universal__title_team {
     text-align: center;
   }
+
   .team__link {
     margin-right: 10px;
     line-height: 20px;
@@ -1028,9 +1033,11 @@
     font-size: 34px;
     line-height: 34px;
   }
+
   .reporting__input {
     margin: 14px;
   }
+
   .reporting {
     padding-top: 98px;
     padding-bottom: 80px;
@@ -1089,8 +1096,8 @@
 }
 
 .get__form {
-max-width: 776px;
-margin-right: 84px;
+  max-width: 776px;
+  margin-right: 84px;
 }
 
 .get__input {
@@ -1174,7 +1181,7 @@ margin-right: 84px;
   }
 
   .get__form {
-  margin-left: 20px;
+    margin-left: 20px;
   }
 
   .get__get-contacts {
@@ -1194,13 +1201,13 @@ margin-right: 84px;
 }
 
 @media (max-width: 1090px) {
-  
+
   .get__get-contacts {
     margin: 26px 10px 0 0;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
 
   .get {
     padding: 40px 4px;
