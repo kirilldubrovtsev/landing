@@ -7,7 +7,7 @@
   src: url("../fonts/OpenSans-Regular.woff2") format('woff2');
 }
 
-font-face {
+@font-face {
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 400;
@@ -408,7 +408,6 @@ font-face {
 .description__title {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-style: italic;
-  font-weight: 600px;
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 0.28px;
@@ -584,7 +583,6 @@ font-face {
 
 .products__item {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-weight: 600px;
   font-style: italic;
   font-size: 22px;
   line-height: 24px;
@@ -819,7 +817,7 @@ font-face {
   margin: 0 auto;
   width: 100%;
   max-width: 188px;
-  opacity: 0.17px;
+  /*opacity: 0.17px;*/
 }
 
 .team__staff:hover>.staff__name {
@@ -1195,7 +1193,7 @@ margin-right: 84px;
   }
 }
 
-/*@media (max-width: 1090px) {
+@media (max-width: 1090px) {
   
   .get__get-contacts {
     margin: 26px 10px 0 0;
@@ -1217,196 +1215,7 @@ margin-right: 84px;
     margin: 40px auto;
   }
 }
-/*.get {
-  width: 100%;
-  padding-top: 104px;
-  padding-bottom: 107px;
-  padding-left: 28px;
-}
 
-.get__content {
-  max-width: 752px;
-}
-
-.get__title,
-.get__text {
-  max-width: 752px;
-}
-
-.get__title {
-  text-transform: uppercase;
-}
-
-.products__line_get {
-  margin-top: 58px;
-  margin-left: 0;
-}
-
-.get__get-body {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: stretch;
-  margin-top: 74px;
-}
-
-.get__get-body::before {
-  content: '';
-  display: inline-block;
-  flex-grow: 1;
-}
-
-.get__get-body::after {
-  content: '';
-  display: inline-block;
-  flex-grow: 1;
-}
-
-.get__form {
-  width: 755px;
-  flex-grow: 0;
-  flex-shrink: 0;
-}
-
-.get__input {
-  margin-top: 20px;
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  box-sizing: border-box;
-  width: 340px;
-  height: 69px;
-  border-radius: 6px;
-  border: 0;
-  background: rgba(246, 242, 242, 1);
-  color: rgba(0, 0, 0, 1);
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.get__field {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: rgba(0, 0, 0, 1);
-  box-sizing: border-box;
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-  max-width: 734px;
-  height: 252px;
-  padding-top: 34px;
-  margin-top: 44px;
-  resize: none;
-}
-
-.get__mail {
-  margin-left: 52px;
-}
-
-.get__button {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 34px;
-  margin-top: 44px;
-  width: 100%;
-  max-width: 734px;
-  height: 76px;
-  border: 0;
-  border-radius: 6px;
-  background: #ff3b3b;
-  color: rgba(255, 255, 255, 1);
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.get__get-contacts {
-  width: 580px;
-  height: 485px;
-  padding: 20px;
-  margin-top: 22px;
-  margin-left: 104px;
-  background: #2d2d2d;
-  flex-shrink: 0;
-  flex-grow: 0;
-}
-
-.get__info {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 34px;
-  padding-top: 142px;
-  padding-left: 82px;
-  color: rgba(255, 255, 255, 1);
-  text-transform: uppercase;
-}
-
-.address {
-  color: rgba(255, 255, 255, 1);
-  padding-top: 30px;
-  padding-left: 82px;
-}
-
-@media (max-width: 1250px) {
-
-  .get__get-body::before,
-  .get__get-body::after {
-    content: none;
-  }
-
-  .get__form {
-    width: 100%;
-    padding-right: 10px;
-  }
-
-  .get__get-contacts {
-    width: 100%;
-    flex-shrink: 1;
-  }
-}
-
-@media (max-width: 1024px) {
-  .get__get-body {
-    flex-wrap: wrap;
-  }
-
-  .get__get-contacts {
-    margin: 26px 10px 0 0;
-  }
-}
-
-@media (max-width: 770px) {
-
-  .get__input,
-  .get__name {
-    width: 100%;
-  }
-
-  .get__mail {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 400px) {
-
-  .get {
-    padding: 40px 4px;
-  }
-
-  .get__text,
-  .get__title {
-    text-align: center;
-  }
-
-  .products__line_get {
-    margin: 40px auto;
-  }
-}*/
 
 
 
@@ -1426,11 +1235,7 @@ margin-right: 84px;
 
 .social-text {
   color: rgba(184, 184, 184, 1);
-  padding-left: 40px;
-}
-
-.social {
-
+  padding-left: 20px;
 }
 
 .footer__link {
