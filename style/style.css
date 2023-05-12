@@ -71,6 +71,7 @@
   flex-wrap: wrap;
   min-height: 100vh;
   width: 100%;
+  min-width: 350px;
   flex-grow: 1;
 }
 
@@ -96,13 +97,14 @@
 
 .page__header {
   width: 100%;
-  max-height: 688px;
   margin: 0 auto;
   padding-top: 26px;
   background: rgba(246, 242, 242, 1);
 }
 
-
+.page__grey {
+  background: rgba(246, 242, 242, 1);
+}
 
 .header {
   width: 100%;
@@ -233,6 +235,14 @@
   }
 }
 
+.page__content {
+  flex-grow: 1;
+}
+
+.intro {
+  padding-top: 102;
+  padding-bottom: 94px;
+}
 .section {
   display: flex;
   justify-content: space-between;
@@ -245,9 +255,11 @@
 }
 
 .intro__content {
+  position: relative;
   width: 100%;
   max-width: 620px;
   margin-top: 102px;
+  bottom: 12px;
   box-sizing: border-box;
 }
 
@@ -401,7 +413,7 @@
 .description {
   width: 100%;
   max-width: 300px;
-  margin: 20px;
+  margin: 10px 0 0 20px;
   margin-bottom: 50px;
 }
 
@@ -690,7 +702,6 @@
 .team__text {
   max-width: 480px;
   margin-top: 34px;
-
   color: rgba(0, 0, 0, 1);
 }
 
@@ -810,7 +821,7 @@
   align-items: center;
   visibility: hidden;
   color: rgba(255, 255, 255, 1);
-  background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0;
   height: 36px;
@@ -818,7 +829,6 @@
   margin: 0 auto;
   width: 100%;
   max-width: 188px;
-  /*opacity: 0.17px;*/
 }
 
 .team__staff:hover>.staff__name {
@@ -1103,19 +1113,24 @@
 
 .get__input {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 28px;
+  color: #000000;
   box-sizing: border-box;
   width: 340px;
   height: 70px;
   border-radius: 6px;
   border: 0;
-  background: rgba(246, 242, 242, 1);
-  color: rgba(0, 0, 0, 1);
+  background: #e0e0e0;
   margin-right: 46px;
   margin-bottom: 50px;
   padding: 0 50px;
+}
+
+.get__input::placeholder {
+  color: #000000;
 }
 
 .get__field {
