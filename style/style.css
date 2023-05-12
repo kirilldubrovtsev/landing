@@ -313,12 +313,13 @@
   height: 100%;
   max-width: 551px;
   margin-top: 102px;
-  box-shadow: -2.200000047683716px -13.800000190734863px 73px 0px rgba(0, 0, 0, 0.29);
+  box-shadow: -2.3px -14px 73px 0px rgba(0, 0, 0, 0.29);
 
 }
 
 .img {
   width: 100%;
+  display: block;
   box-sizing: border-box;
   max-width: 551px;
   height: auto;
