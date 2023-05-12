@@ -236,6 +236,7 @@
 }
 
 .page__content {
+  width: 100%;
   flex-grow: 1;
 }
 
@@ -252,6 +253,7 @@
   min-height: 688px;
   max-width: 1248px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .intro__content {
